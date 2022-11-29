@@ -32,6 +32,7 @@ def main():
         print("Por favor a continuacion ingrese la cantidad de cuotas:")
         cuotas= int(input("cuotas:"))
         if cuotas==1:
+            monto=monto*1.05
             print("************************************************************")
             print("LA COMPRA TOTAL SERA DE: $",monto)
             print("************************************************************")
@@ -127,6 +128,7 @@ def main():
         print("Por favor a continuacion ingrese la cantidad de cuotas:")
         cuotas= int(input("cuotas:"))
         if cuotas==1:
+            monto=monto*1.05
             print("************************************************************")
             print("LA COMPRA TOTAL SERA DE: $",monto)
             print("************************************************************")
@@ -213,6 +215,7 @@ def main():
         cuotas= int(input("cuotas:"))
         if cuotas==1:
             print("************************************************************")
+            monto=monto*1.05
             print("LA COMPRA TOTAL EN NARANJA SERA DE: $",monto)
             print("************************************************************")
             print("============================================================")
@@ -312,6 +315,7 @@ def main():
         cuotas= int(input("cuotas:"))
         if cuotas==1:
             print("************************************************************")
+            monto=monto*1.05
             print("LA COMPRA TOTAL EN PATAGONIA 365 SERA DE: $",monto)
             print("************************************************************")
             print("============================================================")
