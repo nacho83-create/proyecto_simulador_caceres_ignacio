@@ -37,26 +37,24 @@ def main():
             print("LA COMPRA TOTAL SERA DE: $",monto)
             print("************************************************************")
             print("============================================================")
-            
             menu=int(input("""presione 0 para volver al menu principal
-                o presione 9 para salir del sistema:"""))
-            def menu_9y0():
-                if menu==0:
-                    main()
-                elif menu==9:
-                    print("""Uds a salido con exito
-                    MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
-                else: 
-                    def error():
-                        print("************************************************************")
-                        menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
-                        print("************************************************************")
-                        if menu==0:
-                            main()
-                        else:
-                            error()    
-                    error()
-            menu_9y0   
+            o presione 9 para salir del sistema:"""))
+            if menu==0:
+                main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
+            
         elif cuotas==2:
             monto2=monto*1.1307
             cuota2=monto2/2
