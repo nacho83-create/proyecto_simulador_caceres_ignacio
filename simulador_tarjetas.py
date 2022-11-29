@@ -37,21 +37,26 @@ def main():
             print("LA COMPRA TOTAL SERA DE: $",monto)
             print("************************************************************")
             print("============================================================")
-            menu=int(input("presione 0 para volver al menu principal:"))
-            if menu==0:
-                main()
-            else: 
-                def error():
-                    print("************************************************************")
-                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
-                    print("************************************************************")
-                    if menu==0:
-                         main()
-                    else:
-                        error()    
-                error()
-                
-
+            
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            def menu_9y0():
+                if menu==0:
+                    main()
+                elif menu==9:
+                    print("""Uds a salido con exito
+                    MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+                else: 
+                    def error():
+                        print("************************************************************")
+                        menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                        print("************************************************************")
+                        if menu==0:
+                            main()
+                        else:
+                            error()    
+                    error()
+            menu_9y0   
         elif cuotas==2:
             monto2=monto*1.1307
             cuota2=monto2/2
@@ -61,9 +66,25 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************") 
             print("============================================================")
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                    error()
         elif cuotas==3:
             monto3=monto*1.1786
             cuota3=monto3/3
@@ -73,9 +94,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************") 
             print("============================================================")
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==4:
             monto4=monto*1.2279
             cuota4=monto4/4
@@ -85,9 +121,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==5:
             monto5=monto*1.2784
             cuota5=monto5/5
@@ -97,9 +148,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==6:
             monto6=monto*1.3302
             cuota6=monto6/6
@@ -109,9 +175,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************") 
             print("============================================================")
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()   
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()   
         else:
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             print("La opcion ingresada no es valida, el comercio solo vende hasta 6 cuotas") 
@@ -133,10 +214,24 @@ def main():
             print("LA COMPRA TOTAL SERA DE: $",monto)
             print("************************************************************")
             print("============================================================")
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
-
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
             
         elif cuotas==2:
             monto2=monto*1.1466
@@ -147,9 +242,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==3:
             monto3=monto*1.2007
             cuota3=monto3/3
@@ -159,9 +269,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error() 
         elif cuotas==4:
             monto4=monto*1.2564
             cuota4=monto4/4
@@ -171,9 +296,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()  
         elif cuotas==5:
             monto5=monto*1.3137
             cuota5=monto5/5
@@ -183,9 +323,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==6:
             monto6=monto*1.3726
             cuota6=monto6/6
@@ -195,9 +350,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()   
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()   
         else:
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             print("La opcion ingresada no es valida, el comercio solo vende hasta 6 cuotas") 
@@ -219,9 +389,24 @@ def main():
             print("LA COMPRA TOTAL EN NARANJA SERA DE: $",monto)
             print("************************************************************")
             print("============================================================")
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
 
             
         elif cuotas==2:
@@ -233,9 +418,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==3:
             monto3=monto*1.2007
             cuota3=monto3/3
@@ -245,9 +445,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==4:
             monto4=monto*1.2564
             cuota4=monto4/4
@@ -257,9 +472,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error() 
         elif cuotas==5:
             monto5=monto*1.3137
             cuota5=monto5/5
@@ -269,9 +499,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==6:
             monto6=monto*1.3726
             cuota6=monto6/6
@@ -281,9 +526,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()   
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()   
         else:
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             print("La opcion ingresada no es valida, el comercio solo vende hasta 6 cuotas") 
@@ -301,9 +561,24 @@ def main():
         print("LA COMPRA TOTAL EN PLAN Z SERA DE: $",montoz)
         print("************************************************************")
         print("============================================================")
-        menu=int(input("presione 0 para volver al menu principal:"))
+        menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
         if menu==0:
-             main()
+            main()
+        elif menu==9:
+            print("""Uds a salido con exito
+            MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+        else: 
+            def error():
+                print("************************************************************")
+                menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                print("************************************************************")
+                if menu==0:
+                    main()
+                else:
+                    error()    
+            error()
 
 
     elif opcion==5:
@@ -319,10 +594,24 @@ def main():
             print("LA COMPRA TOTAL EN PATAGONIA 365 SERA DE: $",monto)
             print("************************************************************")
             print("============================================================")
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
-
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
             
         elif cuotas==2:
             monto2=monto*1.15
@@ -333,9 +622,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==3:
             monto3=monto*1.15
             cuota3=monto3/3
@@ -345,9 +649,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()  
         elif cuotas==4:
             monto4=monto*1.15
             cuota4=monto4/4
@@ -357,9 +676,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================") 
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()  
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()   
         elif cuotas==5:
             monto5=monto*1.15
             cuota5=monto5/5
@@ -369,9 +703,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================")  
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()
         elif cuotas==6:
             monto6=monto*1.15
             cuota6=monto6/6
@@ -381,9 +730,24 @@ def main():
             print("MUCHAS GRACIAS POR USAR EL SIMULADOR DE CUOTAS") 
             print("************************************************************")
             print("============================================================")  
-            menu=int(input("presione 0 para volver al menu principal:"))
+            menu=int(input("""presione 0 para volver al menu principal
+                o presione 9 para salir del sistema:"""))
+            
             if menu==0:
-                main()   
+                 main()
+            elif menu==9:
+                print("""Uds a salido con exito
+                 MUCHAS GRACIAS POR USAR NUESTROS SERVICIOS""")
+            else: 
+                def error():
+                    print("************************************************************")
+                    menu=int(input("opcion incorrecta presione 0 para volver al menu principal:"))
+                    print("************************************************************")
+                    if menu==0:
+                        main()
+                    else:
+                        error()    
+                error()  
         else:
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             print("La opcion ingresada no es valida, el comercio solo vende hasta 6 cuotas") 
